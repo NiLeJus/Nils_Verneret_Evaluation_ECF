@@ -173,6 +173,7 @@ module.exports = {
   Vehicle,
   RelVehiclesOptions,
   Request,
-  Testimonial
+  Testimonial,
+  Garage
 };
 console.log("Models exported successfully");

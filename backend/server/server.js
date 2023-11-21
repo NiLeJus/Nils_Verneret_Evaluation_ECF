@@ -29,6 +29,8 @@ const photosRoutes = require('./routes/photos');
 const requestsRoutes = require('./routes/requests');
 const vehiclesRoutes = require('./routes/vehicles');
 const testimonialsRoutes = require('./routes/testimonials');
+const garagesRoutes = require('./routes/garages');
+
 
 app.use('/api/admins', adminsRoutes);
 app.use('/api/services', servicesRoutes);
@@ -44,7 +46,7 @@ app.use('/api/photos', photosRoutes);
 app.use('/api/vehicles', vehiclesRoutes);
 app.use('/api/requests', requestsRoutes);
 app.use('/api/testimonials', testimonialsRoutes);
-
+app.use('/api/garages', garagesRoutes);
 
   app.listen(port, () => {
     console.log(`Server is running at http://localhost:${port}`);
